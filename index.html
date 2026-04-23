@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTRL-ALT-SPACE | Astronomy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-halo"></div>
+
+    <nav class="nav">
+        <div class="logo-container">
+            <div class="logo">CTRL-ALT-SPACE</div>
+            <div class="logo-tagline"
+                style="font-size: 10px; color: var(--color-primary); letter-spacing: 1px; margin-top: 4px;">Your
+                shortcut to the stars</div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="events.html">Events</a>
+            <a href="about.html">About Us</a>
+        </div>
+    </nav>
+
+    <div class="scroll-container">
+        <main class="horizontal-scroll">
+
+            <!-- Hero / Intro Pane -->
+            <section class="pane hero-pane" style="position: relative; background: transparent; overflow: hidden;">
+                <img src="Resources/projects-bg.png" class="hero-bg-zoom" alt="Hero Background">
+                <div
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 10, 20, 0.85); z-index: 0;">
+                </div>
+                <div class="hero-content" style="position: relative; z-index: 1;">
+                    <img src="Resources/new_logo.png" alt="CTRL-ALT-SPACE Logo"
+                        style="max-width: 600px; width: 100%; height: auto; margin-bottom: 24px; filter: invert(1); mix-blend-mode: screen;">
+                    <p class="subheadline" style="color: var(--color-text);">A space where curiosity meets creativity
+                        and ideas take off <span style="color: var(--color-primary);">beyond limits</span></p>
+                </div>
+                <div class="scroll-affordance" style="z-index: 1;">
+                    <span>[ SCROLL TO EXPLORE ]</span>
+                    <div class="scroll-line"></div>
+                </div>
+            </section>
+
+            <!-- Project 1: KRAFT OFF -->
+            <section class="pane project-pane split-pane">
+                <div class="pane-left">
+                    <div class="project-number">01</div>
+                    <h2 class="project-title">KRAFT OFF!</h2>
+                    <div class="project-meta">
+                        <div><span>EVENT</span><br>Workshop</div>
+                        <div><span>DATE</span><br>22-24 April</div>
+                        <div><span>VENUE</span><br>Nehru Planetarium</div>
+                    </div>
+                    <div class="narrative-copy">
+                        <p>An immersive astronomy workshop designed to ignite curiosity about the universe. "KRAFT OFF!"
+                            brings together space enthusiasts for three days of exploration.</p>
+                        <p>From stargazing sessions to interactive lectures, we provide a hands-on approach to
+                            understanding our cosmos.</p>
+                    </div>
+                </div>
+                <div class="pane-right">
+                    <div class="single-img-container border-accent">
+                        <!-- Adjusting src to the most likely poster image, will refine if incorrect -->
+                        <img src="Resources/poster.jpg" alt="KRAFT OFF Poster" class="single-img">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project 2: Tote Bag -->
+            <section class="pane project-pane split-pane-reverse">
+                <div class="pane-right">
+                    <div class="single-img-container">
+                        <img src="Resources/totebag.jpg" alt="CTRL-ALT-SPACE Tote Bag" class="single-img">
+                    </div>
+                </div>
+                <div class="pane-left" style="margin-left: 5%;">
+                    <div class="project-number">02</div>
+                    <h2 class="project-title">Stellar Merch</h2>
+                    <div class="project-meta">
+                        <div><span>PRODUCT</span><br>Tote Bag</div>
+                        <div><span>MATERIAL</span><br>Canvas</div>
+                        <div><span>STYLE</span><br>Geometric</div>
+                    </div>
+                    <div class="narrative-copy">
+                        <p>Carry the universe with you. Our exclusive CTRL-ALT-SPACE tote bag features a custom
+                            geometric star pattern in our signature neon purple.</p>
+                        <p>Durable, stylish, and perfect for carrying your astronomy gear or daily essentials.</p>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

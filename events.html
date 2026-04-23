@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTRL-ALT-SPACE | Upcoming Events</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-halo"></div>
+
+    <nav class="nav">
+        <div class="logo-container">
+            <div class="logo">CTRL-ALT-SPACE</div>
+            <div class="logo-tagline"
+                style="font-size: 10px; color: var(--color-primary); letter-spacing: 1px; margin-top: 4px;">Your
+                shortcut to the stars</div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="events.html" class="active">Events</a>
+            <a href="about.html">About Us</a>
+        </div>
+    </nav>
+
+    <div class="scroll-container">
+        <main class="horizontal-scroll">
+
+            <!-- Intro Pane for Events -->
+            <section class="pane hero-pane"
+                style="position: relative; background: transparent; overflow: hidden;">
+                <img src="Resources/download.gif" class="hero-bg-zoom" alt="Hero Background">
+                <div
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 10, 20, 0.85); z-index: 0;">
+                </div>
+                <div class="hero-content" style="position: relative; z-index: 1;">
+                    <h1 class="main-headline">UPCOMING<br>MISSIONS</h1>
+                    <p class="subheadline">Scroll to explore our upcoming astronomy workshops and stargazing events.</p>
+                </div>
+                <div class="scroll-affordance" style="z-index: 1;">
+                    <span>[ SCROLL TO EXPLORE ]</span>
+                    <div class="scroll-line"></div>
+                </div>
+            </section>
+
+            <!-- Event 1 -->
+            <section class="pane project-pane split-pane">
+                <div class="pane-left">
+                    <div class="project-number">APR</div>
+                    <h2 class="project-title">KRAFT OFF</h2>
+                    <div class="project-meta">
+                        <div><span>DATE</span><br>22-24 Apr</div>
+                        <div><span>TYPE</span><br>Festival</div>
+                        <div><span>GEAR</span><br>N/A</div>
+                    </div>
+                    <div class="narrative-copy">
+                        <p>Join us for KRAFT OFF, our signature astronomy event and gathering.</p>
+
+                    </div>
+                </div>
+                <div class="pane-right">
+                    <div class="single-img-container border-accent">
+                        <img src="Resources/poster.jpg" alt="KRAFT OFF" class="single-img">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Event 2 -->
+            <section class="pane project-pane split-pane-reverse">
+                <div class="pane-right">
+                    <div class="single-img-container">
+                        <img src="Resources/bluemoon.png" alt="Blue Moon" class="single-img" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="pane-left" style="margin-left: 5%;">
+                    <div class="project-number">JUN</div>
+                    <h2 class="project-title">Blue Moon</h2>
+                    <div class="project-meta">
+                        <div><span>DATE</span><br>27-29 Jun</div>
+                        <div><span>TYPE</span><br>Observation</div>
+                        <div><span>GEAR</span><br>Provided</div>
+                    </div>
+                    <div class="narrative-copy">
+                        <p>Experience the rare phenomenon of a Blue Moon with guided telescope observations.</p>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Event 3 -->
+            <section class="pane project-pane split-pane">
+                <div class="pane-left">
+                    <div class="project-number">AUG</div>
+                    <h2 class="project-title">Perseid Meteor Shower</h2>
+                    <div class="project-meta">
+                        <div><span>DATE</span><br>12-15 Aug</div>
+                        <div><span>TYPE</span><br>Observation</div>
+                        <div><span>GEAR</span><br>Bring Blanket</div>
+                    </div>
+                    <div class="narrative-copy">
+                        <p>Witness one of the most spectacular meteor showers of the year away from city lights.</p>
+
+                    </div>
+                </div>
+                <div class="pane-right">
+                    <div class="single-img-container border-accent">
+                        <img src="Resources/perseid.png" alt="Perseid Meteor Shower" class="single-img">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Event 4 -->
+            <section class="pane project-pane split-pane-reverse">
+                <div class="pane-right">
+                    <div class="single-img-container">
+                        <img src="Resources/geminids.png" alt="Geminids Meteor Shower" class="single-img"
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="pane-left" style="margin-left: 5%;">
+                    <div class="project-number">DEC</div>
+                    <h2 class="project-title">Geminids Meteor Shower</h2>
+                    <div class="project-meta">
+                        <div><span>DATE</span><br>14-15 Dec</div>
+                        <div><span>TYPE</span><br>Observation</div>
+                        <div><span>GEAR</span><br>Warm Clothes</div>
+                    </div>
+                    <div class="narrative-copy">
+                        <p>Close out the year with the vibrant and reliable Geminids meteor shower.</p>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
