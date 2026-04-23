@@ -14,8 +14,19 @@
 </head>
 
 <body>
+    <canvas id="globalStarfield"></canvas>
     <div class="cursor-dot"></div>
     <div class="cursor-halo"></div>
+
+    <!-- Intro Loader: video on first visit, logo snap on return visits -->
+    <div id="intro-loader">
+        <video id="intro-video" autoplay muted playsinline>
+            <source src="Resources/LoadingVideo.mp4" type="video/mp4">
+        </video>
+        <div id="intro-logo-snap">
+            <img src="Resources/new_logo_nobg.png" alt="CTRL-ALT-SPACE">
+        </div>
+    </div>
 
     <nav class="nav">
         <div class="logo-container">
@@ -36,17 +47,22 @@
 
             <!-- Hero / Intro Pane -->
             <section class="pane hero-pane" style="position: relative; background: transparent; overflow: hidden;">
-                <img src="Resources/projects-bg.png" class="hero-bg-zoom" alt="Hero Background">
-                <div
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 10, 20, 0.85); z-index: 0;">
+                <!-- Saturn background — let CSS class handle sizing/position -->
+                <img src="Resources/FinalExtendedSaturn.png" class="hero-bg-zoom" alt="Hero Background">
+
+                <!-- Dark overlay -->
+                <div style="position: absolute; inset: 0; background: rgba(10, 10, 20, 0.5); z-index: 1;"></div>
+
+                <div class="hero-content" style="position: relative; z-index: 20;">
+                    <!-- Clip wrapper hides the transparent bottom padding baked into the logo PNG -->
+                    <div class="logo-clip-wrapper">
+                        <img src="Resources/new_logo_nobg.png" alt="CTRL-ALT-SPACE Logo" class="hero-logo-img" style="">
+                    </div>
+                    <p class="subheadline">A space where curiosity meets creativity
+                        and ideas take off <span style="color: var(--color-primary);">Beyond limits</span></p>
                 </div>
-                <div class="hero-content" style="position: relative; z-index: 1;">
-                    <img src="Resources/new_logo.png" alt="CTRL-ALT-SPACE Logo"
-                        style="max-width: 600px; width: 100%; height: auto; margin-bottom: 24px; filter: invert(1); mix-blend-mode: screen;">
-                    <p class="subheadline" style="color: var(--color-text);">A space where curiosity meets creativity
-                        and ideas take off <span style="color: var(--color-primary);">beyond limits</span></p>
-                </div>
-                <div class="scroll-affordance" style="z-index: 1;">
+
+                <div class="scroll-affordance" style="z-index: 20;">
                     <span>[ SCROLL TO EXPLORE ]</span>
                     <div class="scroll-line"></div>
                 </div>
@@ -65,8 +81,7 @@
                     <div class="narrative-copy">
                         <p>An immersive astronomy workshop designed to ignite curiosity about the universe. "KRAFT OFF!"
                             brings together space enthusiasts for three days of exploration.</p>
-                        <p>From stargazing sessions to interactive lectures, we provide a hands-on approach to
-                            understanding our cosmos.</p>
+                        <p>Vamos!! Explore the cosmos with us</p>
                     </div>
                 </div>
                 <div class="pane-right">
@@ -86,7 +101,7 @@
                 </div>
                 <div class="pane-left" style="margin-left: 5%;">
                     <div class="project-number">02</div>
-                    <h2 class="project-title">Stellar Merch</h2>
+                    <h2 class="project-title">CAS Merch</h2>
                     <div class="project-meta">
                         <div><span>PRODUCT</span><br>Tote Bag</div>
                         <div><span>MATERIAL</span><br>Canvas</div>
